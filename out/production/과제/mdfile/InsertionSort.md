@@ -22,10 +22,10 @@ insertionSort(A[], n)
 ```
 insertionSort(A[], n)
 {
-    for (i ← n) downto 2 {
+    for (i ← n) downto 1 {
         loc ← i + 1;
         newItem ← A[i];
-        while(loc < n and newItem < A[loc]) {
+        while(loc <= n and newItem < A[loc]) {
             A[loc-1] ← A[loc];
             loc++;
         }

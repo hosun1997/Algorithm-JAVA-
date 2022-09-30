@@ -1,6 +1,8 @@
+package Chapter04.E_quicksort;
+
 import java.util.Scanner;
 
-public class quickSort {
+public class quickSort1 {
   public int[] A;
   public static int[] arrtmp = null;
   public static int count = 1;
