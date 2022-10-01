@@ -1,21 +1,25 @@
 # Algorithm [Java]
+
 ## Chapter 04. Sorting
-  1. Basic Sorting
 
-     [SelectionSort](mdfile/selectionSort.md)
+### 1. Basic Sorting
 
-     [BubbleSort](mdfile/BubbleSort.md)
+   [SelectionSort](mdfile/selectionSort.md)
 
-     [InsertionSort](mdfile/InsertionSort.md)
+   [BubbleSort](mdfile/BubbleSort.md)
 
-  2. Advanced Sorting
+   [InsertionSort](mdfile/InsertionSort.md)
 
-     [MergeSort](mdfile/MergeSort.md)
+### 2. Advanced Sorting
 
-     [QuickSort](mdfile/QuickSort.md)
+   [MergeSort](mdfile/MergeSort.md)
 
-  3. Special Sorting
+   [QuickSort](mdfile/QuickSort.md)
 
-     [RadixSort](mdfile/RadixSort.md)
+   [HeapSort](mdfile/HeapSort.md)
 
-     [CountingSort](mdfile/CountingSort.md)
+### 3. Special Sorting
+
+   [RadixSort](mdfile/RadixSort.md)
+
+   [CountingSort](mdfile/CountingSort.md)

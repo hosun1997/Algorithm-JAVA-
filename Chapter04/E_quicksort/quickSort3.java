@@ -2,7 +2,7 @@ package Chapter04.E_quicksort;
 
 import java.util.Scanner;
 
-public class quickSort2 {
+public class quickSort3 {
     public int[] A;
 
     public static void makeArray(int arr[], int n) {
@@ -30,13 +30,13 @@ public class quickSort2 {
     }
 
     public static int partition(int arr[], int p, int r) {
-        int x = arr[r];
-        int i = p-1;
-        for(int j = p; j < r; j++) {
-            if(arr[j] > x) swap(arr, ++i, j);
+        int x = arr[p];
+        int i = r+1;
+        for(int j = r; j > 0; j--) {
+            if(arr[j] > x) swap(arr, --i, j);
         }
-        swap(arr,i+1,r);
-        return i+1;
+        swap(arr,i-1,p);
+        return i-1;
     } // x값보다 작으면 i part에 저장, 크면 j part에 저장. 끝나면 r위치의 x값을 i와 j 사이로 이동
 
     public static void swap(int arr[], int a, int b) {

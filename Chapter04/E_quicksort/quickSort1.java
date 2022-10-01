@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class quickSort1 {
   public int[] A;
-  public static int[] arrtmp = null;
-  public static int count = 1;
 
   public static void makeArray(int arr[], int n) {
     for(int i = 0; i < n; i ++) {
@@ -38,9 +36,6 @@ public class quickSort1 {
       if(arr[j] < x) swap(arr, ++i, j);
     }
     swap(arr,i+1,r);
-    System.out.print("과정" + count + ": ");
-    count++;
-    printArray(arr, arr.length);
     return i+1;
   } // x값보다 작으면 i part에 저장, 크면 j part에 저장. 끝나면 r위치의 x값을 i와 j 사이로 이동
 
@@ -60,7 +55,6 @@ public class quickSort1 {
     makeArray(A, n); 
     System.out.print("배열: ");
     printArray(A, n);
-    System.out.println();
     quicksort(A, 0, n-1);
     System.out.println();
     System.out.print("결과: ");
