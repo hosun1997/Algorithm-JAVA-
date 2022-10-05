@@ -65,7 +65,7 @@ partition(A[], p, r)
    x ← A[p];
    i ← r+1;
    for (j ← r) downto 2 {
-       if (A[j] <= x) then A[--i] ↔ A[j];
+       if (A[j] >= x) then A[--i] ↔ A[j];
    }
    A[i-1] ↔ A[p];
    return i-1;
@@ -89,7 +89,7 @@ partition(A[], p, r)
    x ← A[r];
    i ← p-1;
    for (j ← p) to (r-1) {
-       if (A[j] >= x) then A[++i] ↔ A[j];
+       if (A[j] <= x) then A[++i] ↔ A[j];
    }
    A[i+1] ↔ A[r];
    return i+1;
