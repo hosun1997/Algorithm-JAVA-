@@ -1,4 +1,6 @@
-public class Test {
+package Chapter04.H_countingsort;
+
+public class countingSort1 {
     public static int[] A = {3,3,3,2,2,1,1};
     public static int[] B;
     public static int[] C;
@@ -40,8 +42,7 @@ public class Test {
         System.out.println();
 
         for (int j = n - 1; j >= 0; j--) {
-            B[C[A[j]]] = A[j];
-            C[A[j]]--;
+            //???
         }
 
         System.out.println("결과: ");

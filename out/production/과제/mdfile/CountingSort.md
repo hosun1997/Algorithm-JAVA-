@@ -23,23 +23,45 @@ countingSort(A[], B[], n)
 ```
 
 
+## (0 <= n < k)
+
+```
+countingSort(A[], B[], n)
+{
+    for (i ← 1) to k+1
+        C[i] ← 0;
+    
+    for (j ← 1) to n
+        C[A[j]+1]++;
+        
+    for (i ← 2) to k+1
+        C[i] ← C[i] + C[i-1];
+        
+    for (j ← n) downto 1 {
+        B[C[A[j]+1]] ← A[j];
+        C[A[j]+1]--;
+    }
+        
+}
+```
+
 ## (-k < n < k)
 
 ```
 countingSort(A[], B[], n)
 {
-    for (i ← 1) to 2k+1
+    for (i ← 1) to k+1
         C[i] ← 0;
     
     for (j ← 1) to n
-        C[A[j]+k+1]++;
+        C[A[j]+1]++;
         
-    for (i ← 2) to k
+    for (i ← 2) to k+1
         C[i] ← C[i] + C[i-1];
         
     for (j ← n) downto 1 {
-        B[C[A[j]+k]] ← A[j];
-        C[A[j]+k+1]--;
+        B[C[A[j]+1]] ← A[j];
+        C[A[j]+1]--;
     }
         
 }
