@@ -1,4 +1,4 @@
-public class Test {
+public class test {
     public static int[] A = {3,3,3,2,2,1,1};
     public static int[] B;
     public static int[] C;
@@ -14,8 +14,8 @@ public class Test {
 
     public static void countingSort(int[] A, int[] B, int n) {
         int k = findK(A);
-        C = new int[k];
         B = new int[n];
+        C = new int[k];
 
         for (int i = 0; i < k; i++) {
             C[i] = 0;
@@ -58,7 +58,6 @@ public class Test {
             System.out.printf("%d  ", A[i]);
         }
         System.out.println();
-
 
         countingSort(A, B, A.length);
 
